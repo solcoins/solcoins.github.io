@@ -1,3 +1,6 @@
+*{
+  font-family:basic;
+}
 .cover {
     position: absolute;
     left: 50%;
@@ -5,4 +8,12 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align:center;
+  }
+  @font-face {
+    font-family: basic;
+    src: url(/assets/fonts/Urbanist-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: italic;
+    src: url(/assets/fonts/Urbanist-Italic-VariableFont_wght.ttf);
   }
