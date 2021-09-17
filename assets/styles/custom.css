@@ -56,18 +56,31 @@ section.intro {
 }
 
 .info {
-  width: 100%;
+  width: 60%;
 }
 
 .example {
   height: 25rem;
   object-fit: contain;
+  display: flex;
+
+  border-color: #72f0ff #07b4cc #10cce6 #10e1fd;
+  border-image: none;
+  border-radius: 10px 0 10px 0;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.example img {
+  width: auto;
+  height: 100%;
 }
 
 .intro .example {
   height: 35rem;
   object-fit: contain;
   margin-top: -10%;
+  border: none;
 }
 
 .banner {
@@ -87,4 +100,78 @@ section.intro {
 .price .banner {
   color: var(--color-black);
   background: var(--color-purple);
+}
+
+section.price .limited {
+  padding-bottom: var(--padding-extra);
+}
+
+.limited .info {
+  margin-right: var(--padding-large);
+  margin-left: 0;
+}
+
+.flex-revert .info {
+  margin-right: 0;
+  margin-left: var(--padding-large);
+}
+
+@media (max-width: 1023px) {
+  .intro .example {
+    height: 25rem;
+  }
+
+  .limited .info {
+    margin-right: var(--padding-medium);
+  }
+
+  .flex-revert .info {
+    margin-left: var(--padding-medium);
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding-top: var(--padding-large);
+  }
+
+  section.price .limited {
+    padding-bottom: var(--padding-normal);
+  }
+
+  section .limited {
+    flex-direction: column;
+  }
+
+  .intro .example {
+    height: auto;
+    width: 100%;
+  }
+
+  .example {
+    height: auto;
+  }
+
+  .example img {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .limited .info {
+    margin-right: 0;
+  }
+
+  .flex-revert .info {
+    margin-left: 0;
+  }
+
+  .banner {
+    position: relative;
+    transform: none;
+    margin-bottom: var(--padding-normal);
+  }
 }

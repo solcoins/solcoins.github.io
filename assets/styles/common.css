@@ -107,3 +107,9 @@ button {
   border: none;
   padding: var(--padding-small) var(--padding-normal);
 }
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
