@@ -1,0 +1,90 @@
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: var(--z-index-top);
+  padding: var(--padding-small) var(--padding-normal);
+  width: 100%;
+}
+
+header a {
+  padding: var(--padding-small) var(--padding-normal);
+  display: flex;
+  position: relative;
+}
+
+footer {
+  padding-top: var(--padding-large);
+  color: var(--color-green);
+}
+
+a.active::after {
+  content: '';
+  border: 1px solid var(--color-black);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.socials a {
+  padding: var(--padding-small);
+}
+
+.menu a {
+  color: var(--color-black);
+}
+
+section {
+  padding: var(--padding-extra) 0 var(--padding-normal);
+}
+
+section.intro {
+  background-image: url(/assets/images/gradient.png);
+  background: linear-gradient(0, var(--color-green) 0%, var(--color-blue) 50%, var(--color-purple) 100%);
+  padding: var(--padding-large) 0 0;
+  color: var(--color-black);
+}
+
+.logo {
+  width: 80%;
+  max-width: 280px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.info {
+  width: 100%;
+}
+
+.example {
+  height: 25rem;
+  object-fit: contain;
+}
+
+.intro .example {
+  height: 35rem;
+  object-fit: contain;
+  margin-top: -10%;
+}
+
+.banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+  background: var(--color-blue);
+  padding: var(--padding-normal);
+}
+
+.banner p {
+  margin-bottom: 0;
+}
+
+.price .banner {
+  color: var(--color-black);
+  background: var(--color-purple);
+}
