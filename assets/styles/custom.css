@@ -64,7 +64,8 @@ section.intro {
   object-fit: contain;
   display: flex;
 
-  border-color: #72f0ff #07b4cc #10cce6 #10e1fd;
+  /* border-color: #72f0ff #07b4cc #10cce6 #10e1fd; */
+  border-color: var(--color-green);
   border-image: none;
   border-radius: 10px 0 10px 0;
   border-style: solid;
