@@ -54,6 +54,8 @@
 	<link rel="stylesheet" href="assets/styles/normalize.css">
 	<link rel="stylesheet" href="assets/styles/common.css">
 	<link rel="stylesheet" href="assets/styles/custom.css">
+	<script src="https://kit.fontawesome.com/50edaf9795.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -84,14 +86,34 @@
 				<h1>FIND YOUR SOLCOIN</h1>
 				<p class="medium">You may be wondering if it’s art or money? It’s Solcoin. 9001 exist... only on the Solana
 					blockchain.</p>
+					<div class="fp-email">
+						<div>
+							<form class="email-form" id="email-form" action="https://newsletter.gizer.io/subscribe"
+							method='POST' accept-charset="utf-8" name="email-form" target="_blank">
+								<input class="email" id="email" type="email" name="email" placeholder="Enter your email address"/>
+								<div style="display: none;">
+									<label for="hp">HP</label><br />
+									<input type="text" name="hp" id="hp"/>
+								</div>
+								<input type="hidden" name="list" value="F5V1MRvLMFKqvFju6f6yLg"/>
+								<input type="hidden" name="subform" value="yes" />
+								<!-- <button type="submit" form="email-form" value="submit" 
+								class="submit-btn" formtarget="_blank">Join the Waitlist</button>  -->
+								<button type="submit" form="email-form" id="submit-btn" class="submit-btn">Join the Waitlist</button>
+							</form>
+						</div>
+					</div>
 			</div>
+			
 			<div class="example">
 				<img src="/assets/images/examples/main.png" alt="Solcoins Solana art NFT Example" />
 			</div>
+
 			<div class="banner flex-center flex-justify">
 				<p class="medium">Check our collection out.</p>
 				<button disabled>Coming Soon</button>
 			</div>
+			
 		</div>
 	</section>
 	<section class="about">
@@ -113,6 +135,7 @@
 				<h2>Layers</h2>
 				<p class="medium">Each Solcoin has from 6 to 14 layers. Solcoins are generated from 240 attributes. Some
 					attributes will only be available on 1 Solcoin.</p>
+					
 			</div>
 			<div class="example">
 				<img src="/assets/images/examples/2.png" alt="NFT Art Solcoins Solanart" />

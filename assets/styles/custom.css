@@ -45,6 +45,9 @@ section.intro {
   background: linear-gradient(0, var(--color-green) 0%, var(--color-blue) 50%, var(--color-purple) 100%);
   padding: var(--padding-large) 0 0;
   color: var(--color-black);
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
 }
 
 .logo {
@@ -55,11 +58,72 @@ section.intro {
   z-index: 1;
 }
 
+.fp-email {
+  flex-basis: calc(50% - 40px);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.email-form {
+  height: 40px;
+  display: flex;
+  min-width: 300px;
+  max-width: 600px;
+  border: none;
+  color: #fff;
+}
+
+.email-form .email  {
+  border: 0;
+  flex: 2 1;
+  padding-inline-start: 20px;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  background-color: hsla(0,0%,100%,.2);
+  color: var(--color-black);
+}
+
+.email-form .submit-btn {
+  max-width: 240px;
+  min-width: 100px;
+  background-color: var(--color-purple);
+  border: 0;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: 700;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 0 8px 8px 0;
+}
+
+.go-home-btn {
+  background-color: var(--color-purple);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+}
+
+
+.fp-email .email-success {
+  color: var(--color-purple);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .info {
-  width: 60%;
+  /* width: 60%; */
+  padding-right: 20px;
+  flex-basis: calc(50%-40px);
 }
 
 .example {
+  flex-basis: calc(50% - 40px);
+  padding-left: 20px;
   height: 25rem;
   object-fit: contain;
   display: flex;
