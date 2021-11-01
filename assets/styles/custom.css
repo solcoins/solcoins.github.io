@@ -195,9 +195,21 @@ section.price .limited {
   }
 }
 
+@media (min-width: 768) and (max-width: 1024px) {
+ /* @TODO: Add tablet specific css to push images onto one line like mobile */
+}
+
 @media (max-width: 767px) {
   section {
     padding-top: var(--padding-large);
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
   }
 
   section.price .limited {
