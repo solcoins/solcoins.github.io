@@ -28,6 +28,12 @@ a.active::after {
   bottom: 0;
 }
 
+p.medium a {
+  color: #89CFF0;
+}
+
+
+
 .socials a {
   padding: var(--padding-small);
 }
