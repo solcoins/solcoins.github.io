@@ -157,12 +157,12 @@ section.intro {
   margin-bottom: 0;
 }
 
-.price .banner {
+.layers .banner {
   color: var(--color-black);
   background: var(--color-purple);
 }
 
-section.price .limited {
+section.layers .limited {
   padding-bottom: var(--padding-extra);
 }
 
@@ -218,7 +218,7 @@ section.price .limited {
     font-size: 2.7rem;
   }
 
-  section.price .limited {
+  section.layers .limited {
     padding-bottom: var(--padding-normal);
   }
 
